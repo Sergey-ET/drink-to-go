@@ -1,13 +1,6 @@
-# "Drink2Go" - Online store of coffee drinks
+# Типовая вёрстка «Барбершопа» для 2 уровня вёрстки
+## Тестирование
 
-Diploma project at asynchronous course "Profession "Frontend Developer" by [HTML Academy](https://htmlacademy.ru).
+- Запуск: `npm lint`
 
-Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdeveloper)
-
-## Project start and build
-
-* Dependencies installing: `npm i`
-* Project build: `npm run build`
-* Local server starting: `npm start`
-
-## Project review
+Тестирует Stylelint и EditorConfig.
