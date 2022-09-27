@@ -12,6 +12,101 @@
 </head>
 
 <body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="./index.html" class="page-header__logo-image">
+        <img class="page-header__logo-icon" src="./img/icons/logo-mobile.svg" alt="Логотип интернет-магазина Drink2Go"
+          width="32" height="36">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="main-nav__ref">
+          <img class="main-nav__ref-icon" src="./img/icons/user.svg" alt="Вход в личный кабинет" width="16" height="16">
+        </a>
+        <a class="main-nav__ref">
+          <img class="main-nav__ref-icon" src="./img/icons/basket.svg" alt="Логотип интернет-магазина Drink2Go"
+            width="16" height="16">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--master main-nav__item--active main-nav__item--master--active">
+            <a class="main-nav__link main-nav__link--master">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--master">
+            <a class="main-nav__link main-nav__link--master" href="./catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__item main-nav__item--master">
+            <a class="main-nav__link main-nav__link--master" href="./delivery.html">Доставка</a>
+          </li>
+          <li class="main-nav__item main-nav__item--master">
+            <a class="main-nav__link main-nav__link--master" href="./about.html">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="slider">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./img/flat_white_mobile.png" alt="Декаф Флэт Уайт" class="swiper-slide__image" width="280"
+              height="280">
+            <span class="swiper-slide__label">Новинка!</span>
+            <h1 class="swiper-slide__title">Декаф Флэт Уайт</h1>
+            <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+              молоком — то, что нужно для расслабления после
+              тяжёлого рабочего дня</p>
+            <span class="swiper-slide__old-price">295₽</span>
+            <span class="swiper-slide__new-price">225₽</span>
+            <a href="/" class="swiper-slide__button">Заказать</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/lavender_mobile.png" alt="Лавандовый Латте" class="swiper-slide__image" width="280"
+              height="280">
+            <span class="swiper-slide__label">Новинка!</span>
+            <h1 class="swiper-slide__title">Лавандовый Латте</h1>
+            <p class="swiper-slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+              лавандовым сиропом унесёт вас прямо на вершину
+              Радужных гор</p>
+            <span class="swiper-slide__old-price">285₽</span>
+            <span class="swiper-slide__new-price">265₽</span>
+            <a href="/" class="swiper-slide__button">Заказать</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/espresso_mobile.png" alt="Тройной Эспрессо" class="swiper-slide__image" width="280"
+              height="280">
+            <span class="swiper-slide__label">Новинка!</span>
+            <h1 class="swiper-slide__title">Тройной Эспрессо</h1>
+            <p class="swiper-slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
+              эспрессо из Колумбии покажет вам, что такое настоящая
+              бодрость</p>
+            <span class="swiper-slide__old-price">395₽</span>
+            <span class="swiper-slide__new-price">375₽</span>
+            <a href="/" class="swiper-slide__button">Заказать</a>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="./img/icons/arrow.svg" alt="" class="swiper-button-prev__icon" width="11" height="20">
+        </div>
+        <div class="swiper-button-next">
+          <img src="./img/icons/arrow.svg" alt="" class="swiper-button-next__icon" width="11" height="20">
+        </div>
+      </div>
+    </section>
+
+    <section class="features"></section>
+  </main>
+
+  <footer class="page-footer"></footer>
 
   <script src="js/script.js"></script>
 </body>
