@@ -19,23 +19,25 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="./index.html" class="page-header__logo-image">
-        <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="32" height="36" role="img"
-          aria-label="Логотип интернет-магазина Drink2Go">
-          <use xlink:href="./img/sprite.svg#logo-symbol"></use>
-        </svg>
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__ref">
-          <svg class="main-nav__ref-icon" width="16" height="16" role="img" aria-label="Вход в личный кабинет">
+      <div class="page-header__inner">
+        <a href="./index.html" class="page-header__logo-image">
+          <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="32" height="36" role="img"
+            aria-label="Логотип интернет-магазина Drink2Go">
+            <use xlink:href="./img/sprite.svg#logo-symbol"></use>
+          </svg>
+        </a>
+        <a class="page-header__ref">
+          <svg class="page-header__ref-icon" width="16" height="16" role="img" aria-label="Вход в личный кабинет">
             <use xlink:href="./img/sprite.svg#user"></use>
           </svg>
         </a>
-        <a class="main-nav__ref">
-          <svg class="main-nav__ref-icon" width="16" height="16" role="img" aria-label="Вход в корзину">
+        <a class="page-header__ref">
+          <svg class="page-header__ref-icon" width="16" height="16" role="img" aria-label="Вход в корзину">
             <use xlink:href="./img/sprite.svg#basket"></use>
           </svg>
         </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--master main-nav__item--active main-nav__item--master--active">
