@@ -1,12 +1,63 @@
+.main-nav {
+  @media (max-width: $mobile-width-only) {
+    margin-top: -25px;
+  }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    column-gap: 20px;
+    margin-left: 162px;
+    margin-right: 162px;
+  }
 }
 
 .main-nav__item {
   min-width: 280px;
+
+  @media (max-width: $mobile-width-only) {
+
+    &:active {
+      background-color: $secondary;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    order: 1;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $primary;
+      }
+    }
+  }
 }
 
 .main-nav__link {
@@ -19,19 +70,44 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+
+    &:active {
+      background-color: $secondary;
+    }
+
+    &--active {
+      color: $primary;
+    }
+  }
 }
 
 .main-nav__toggle {
   position: relative;
-  top: -30px;
-  right: calc(24px - 100%);
+  top: -52px;
+  right: calc(60px - 100%);
   display: block;
-  width: 24px;
-  height: 15px;
+  width: 60px;
+  height: 60px;
   background-color: $white;
   border: none;
   cursor: pointer;
   z-index: 2;
+
+  &:active {
+    background-color: $secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--nojs {
@@ -43,8 +119,9 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 16px;
   height: 2px;
   background-color: $black;
@@ -52,15 +129,15 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -30px;
-  right: calc(24px - 100%);
+  top: -52px;
+  right: calc(60px - 100%);
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 30px;
+    left: 25px;
     width: 22px;
     height: 2px;
     background-color: $black;
