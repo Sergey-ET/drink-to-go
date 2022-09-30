@@ -13,6 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -81,38 +82,71 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="./img/flat_white_mobile.png" alt="Декаф Флэт Уайт" class="swiper-slide__image" width="280"
-              height="280">
-            <span class="label swiper-slide__label">Новинка!</span>
-            <p class="swiper-slide__title">Декаф Флэт Уайт</p>
-            <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-              молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <span class="swiper-slide__old-price">295₽</span>
-            <span class="swiper-slide__new-price">225₽</span>
-            <a href="/" class="button swiper-slide__button">Заказать</a>
+          <div class="swiper-slide swiper-slide--white">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/flat_white_desktop.webp 1x, ./img/flat_white_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/flat_white_tablet.webp 1x, ./img/flat_white_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/flat_white_mobile.webp 1x, ./img/flat_white_mobile@2x.webp 2x">
+              <img class="swiper-slide__image" src="./img/flat_white_mobile.png"
+                srcset="./img/flat_white_mobile@2x.png 2x" alt="Банка кофе Декаф Флэт Уайт" width="280" height="280">
+            </picture>
+            <div class="swiper-slide__wrapper">
+              <span class="label swiper-slide__label">Новинка!</span>
+              <p class="swiper-slide__title">Декаф Флэт Уайт</p>
+              <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным
+                фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="swiper-slide__inner">
+                <span class="swiper-slide__old-price">295₽</span>
+                <span class="swiper-slide__new-price">225₽</span>
+                <a href="/" class="button swiper-slide__button">Заказать</a>
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./img/lavender_mobile.png" alt="Лавандовый Латте" class="swiper-slide__image" width="280"
-              height="280">
-            <span class="label swiper-slide__label">Новинка!</span>
-            <p class="swiper-slide__title">Лавандовый Латте</p>
-            <p class="swiper-slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
-              лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <span class="swiper-slide__old-price">285₽</span>
-            <span class="swiper-slide__new-price">265₽</span>
-            <a href="/" class="button swiper-slide__button">Заказать</a>
+          <div class="swiper-slide swiper-slide--latte">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/lavender_desktop.webp 1x, ./img/lavender_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/lavender_tablet.webp 1x, ./img/lavender_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/lavender_mobile.webp 1x, ./img/lavender_mobile@2x.webp 2x">
+              <img class="swiper-slide__image" src="./img/lavender_mobile.png" srcset="./img/lavender_mobile@2x.png 2x"
+                alt="Банка кофе Лавандовый Латте" width="280" height="280">
+            </picture>
+            <div class="swiper-slide__wrapper">
+              <span class="label swiper-slide__label">Новинка!</span>
+              <p class="swiper-slide__title">Лавандовый Латте</p>
+              <p class="swiper-slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы
+                и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+              <div class="swiper-slide__inner">
+                <span class="swiper-slide__old-price">285₽</span>
+                <span class="swiper-slide__new-price">265₽</span>
+                <a href="/" class="button swiper-slide__button">Заказать</a>
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./img/espresso_mobile.png" alt="Тройной Эспрессо" class="swiper-slide__image" width="280"
-              height="280">
-            <span class="label swiper-slide__label">Новинка!</span>
-            <p class="swiper-slide__title">Тройной Эспрессо</p>
-            <p class="swiper-slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
-              эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <span class="swiper-slide__old-price">395₽</span>
-            <span class="swiper-slide__new-price">375₽</span>
-            <a href="/" class="button swiper-slide__button">Заказать</a>
+          <div class="swiper-slide swiper-slide--espresso">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/espresso_desktop.webp 1x, ./img/espresso_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/espresso_tablet.webp 1x, ./img/espresso_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/espresso_mobile.webp 1x, ./img/espresso_mobile@2x.webp 2x">
+              <img class="swiper-slide__image" src="./img/espresso_mobile.png" srcset="./img/espresso_mobile@2x.png 2x"
+                alt="Банка кофе Тройной Эспрессо" width="280" height="280">
+            </picture>
+            <div class="swiper-slide__wrapper">
+              <span class="label swiper-slide__label">Новинка!</span>
+              <p class="swiper-slide__title">Тройной Эспрессо</p>
+              <p class="swiper-slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
+                эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="swiper-slide__inner">
+                <span class="swiper-slide__old-price">395₽</span>
+                <span class="swiper-slide__new-price">375₽</span>
+                <a href="/" class="button swiper-slide__button">Заказать</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -120,12 +154,16 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">
-          <img src="./img/icons/arrow.svg" alt="" class="swiper-button-prev__icon" width="11" height="20">
-        </div>
-        <div class="swiper-button-next">
-          <img src="./img/icons/arrow.svg" alt="" class="swiper-button-next__icon" width="11" height="20">
-        </div>
+        <svg class="swiper-button-prev" width="80" height="714" viewBox="0 0 80 714" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M43.7166 347L45 348.321L36.5668 357L45 365.679L43.7166 367L34 357L43.7166 347Z" fill="#7859CF" />
+        </svg>
+        <svg class="swiper-button-next" width="80" height="714" viewBox="0 0 80 714" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M43.7166 347L45 348.321L36.5668 357L45 365.679L43.7166 367L34 357L43.7166 347Z" fill="#7859CF" />
+        </svg>
       </div>
     </section>
 
@@ -439,6 +477,7 @@
     <span class="footer-copyright">Разработано в <a href="#" class="footer-copyright__link">HTML Academy</a></span>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

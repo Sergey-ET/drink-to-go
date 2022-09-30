@@ -1,9 +1,10 @@
+// Mobile Menu
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function() {
+navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
@@ -13,6 +14,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// Swiper slider
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// Modal window
 const link = document.querySelector('.js-login');
 const popup = document.querySelector('.modal');
 const close = popup.querySelector('.modal__button--close');
