@@ -7,8 +7,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 640px;
-    overflow-y: visible;
+    height: 828px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +45,18 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 0;
+
+    &--white {
+      background: linear-gradient($flat-white 640px, $white 88px);
+    }
+
+    &--latte {
+      background: linear-gradient($lavender-latte 640px, $white 88px);
+    }
+
+    &--espresso {
+      background: linear-gradient($espresso 640px, $white 88px);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -191,6 +202,10 @@
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
   }
 
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
   @media (min-width: $desktop-width) {
 
     &:hover,
@@ -215,6 +230,10 @@
 
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
   }
 
   @media (min-width: $desktop-width) {
