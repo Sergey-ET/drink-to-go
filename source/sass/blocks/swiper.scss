@@ -66,6 +66,18 @@
     padding-right: 40px;
     flex-direction: row;
     justify-content: center;
+
+    &--white {
+      background: $flat-white;
+    }
+
+    &--latte {
+      background: $lavender-latte;
+    }
+
+    &--espresso {
+      background: $espresso;
+    }
   }
 }
 
@@ -207,6 +219,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 714px;
 
     &:hover,
     &:focus {
@@ -237,6 +250,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 714px;
 
     &:hover,
     &:focus {
