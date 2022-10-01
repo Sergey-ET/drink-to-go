@@ -193,12 +193,20 @@
     border-radius: 0;
     opacity: 1;
     background-color: $white;
+
+    &:hover {
+      background-color: $primary-opacity-025;
+    }
   }
 }
 
 .swiper-pagination-bullet-active {
   @media (min-width: $desktop-width) {
     background-color: $primary;
+
+    &:hover {
+      background-color: $primary;
+    }
   }
 }
 

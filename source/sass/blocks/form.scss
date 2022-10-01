@@ -1,0 +1,52 @@
+.form-block {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  border: none;
+
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.form-block-title {
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-button {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  padding: 11px 0;
+  font-size: 14px;
+  line-height: 24px;
+
+  &--submit {
+    margin-bottom: 25px;
+  }
+
+  &--reset {
+    margin-bottom: 40px;
+    background-color: $white;
+    color: $primary;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $primary-light;
+    }
+
+    &:active {
+      background-color: $primary-dark;
+    }
+
+    &:disabled {
+      color: $white;
+      background-color: $grey-light;
+      cursor: default;
+    }
+  }
+}

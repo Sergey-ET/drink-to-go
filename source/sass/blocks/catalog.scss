@@ -1,0 +1,41 @@
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 44px;
+  background-color: $grey-lightest;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__label {
+  display: block;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.catalog__sorting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.catalog__sorting-label {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+}
