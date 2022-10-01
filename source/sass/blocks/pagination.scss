@@ -6,7 +6,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 448px;
+    justify-content: end;
+    margin: 0;
+    margin-left: auto;
+    right: -20px;
+  }
 }
 
 .pagination-item {
@@ -14,6 +24,22 @@
   &--prev,
   &--next {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &--prev {
+      display: block;
+      order: -1;
+    }
+
+    &--next {
+      display: block;
+    }
+
+    &--arrow {
+      display: none;
+    }
   }
 }
 
@@ -45,6 +71,16 @@
     background-color: $grey-light;
     cursor: default;
   }
+
+  &--prev {
+    width: 140px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &--next {
+    width: 147px;
+    border-radius: 0 4px 4px 0;
+  }
 }
 
 .pagination-item__button-number {
@@ -61,5 +97,29 @@
       color: inherit;
       background-color: inherit;
     }
+  }
+}
+
+.pagination>.pagination-item:nth-child(2)>.pagination-item__button-number {
+  @media (min-width: $tablet-width) {
+    border-radius: 0 4px 4px 0;
+    margin-right: 20px;
+  }
+}
+
+.pagination>.pagination-item:nth-child(5)>.pagination-item__button-number {
+  @media (min-width: $tablet-width) {
+    border-radius: 4px 0 0 4px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pagination-item--number--current+.pagination-item--next {
+    display: none;
+  }
+
+  .pagination-item--number--current+.pagination-item--prev {
+    display: none;
   }
 }

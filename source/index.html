@@ -217,93 +217,99 @@
         <span class="label catalog__label">Каталог</span>
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
         <form action="https://echo.htmlacademy.ru" class="form catalog__form" method="get">
-          <fieldset class="form-block price-block">
-            <legend class="form-block-title price-block-title">Цена</legend>
-            <div class="range-filter">
-              <div class="range-filter__controls">
-                <div class="range-filter__scale">
-                  <div class="range-filter__bar" style="width: 90%; margin-left: 0%"></div>
-                  <!-- /.bar -->
+          <div class="form-inner">
+            <fieldset class="form-block price-block">
+              <legend class="form-block-title price-block-title">Цена</legend>
+              <div class="range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar" style="width: 90%; margin-left: 0%"></div>
+                    <!-- /.bar -->
+                  </div>
+                  <!-- /.scale -->
+                  <div class="range-filter__toggle range-filter__toggle--min" tabindex="0" style="left: 0%"></div>
+                  <!-- /.toggle toggle-min -->
+                  <div class="range-filter__toggle range-filter__toggle--max" tabindex="0" style="left: 85%"></div>
+                  <!-- /.toggle toggle-max -->
                 </div>
-                <!-- /.scale -->
-                <div class="range-filter__toggle range-filter__toggle--min" tabindex="0" style="left: 0%"></div>
-                <!-- /.toggle toggle-min -->
-                <div class="range-filter__toggle range-filter__toggle--max" tabindex="0" style="left: 85%"></div>
-                <!-- /.toggle toggle-max -->
-              </div>
-              <!-- /.range-controls -->
-              <div class="range-filter__price-controls">
-                <label class="range-filter__price-controls-min visually-hidden" for="min-price">Минимальная цена</label>
-                <input class="range-filter__price-controls-input" id="min-price" type="text" name="min-price" value="0">
+                <!-- /.range-controls -->
+                <div class="range-filter__price-controls">
+                  <label class="range-filter__price-controls-min visually-hidden" for="min-price">Минимальная
+                    цена</label>
+                  <input class="range-filter__price-controls-input" id="min-price" type="text" name="min-price"
+                    value="0">
 
-                <label class="range-filter__price-controls-max visually-hidden" for="max-price">Максимальная
-                  цена</label>
-                <input class="range-filter__price-controls-input" id="max-price" type="text" name="max-price"
-                  value="900">
+                  <label class="range-filter__price-controls-max visually-hidden" for="max-price">Максимальная
+                    цена</label>
+                  <input class="range-filter__price-controls-input" id="max-price" type="text" name="max-price"
+                    value="900">
+                </div>
+                <!-- /.price-controls -->
               </div>
-              <!-- /.price-controls -->
-            </div>
-            <!-- /.range-filter -->
-          </fieldset>
-          <fieldset class="form-block milk-block">
-            <legend class="form-block-title milk-block-title">Наличие молока</legend>
-            <ul class="milk-block-list">
-              <li class="milk-block-item">
-                <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="any" id="filter-any"
-                  checked>
-                <label class="milk-block-name" for="filter-any">Неважно</label>
-              </li>
-              <li class="milk-block-item">
-                <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="animal"
-                  id="filter-animal">
-                <label class="milk-block-name" for="filter-animal">Только животное</label>
-              </li>
-              <li class="milk-block-item">
-                <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="vegetable"
-                  id="filter-vegetable">
-                <label class="milk-block-name" for="filter-vegetable">Только растительное</label>
-              </li>
-              <li class="milk-block-item">
-                <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="without"
-                  id="filter-without" disabled>
-                <label class="milk-block-name" for="filter-without">Без молока</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-block origin-block">
-            <legend class="form-block-title origin-block-title">Страна произрастания</legend>
-            <ul class="origin-block-list">
-              <li class="origin-block-item">
-                <input class="visually-hidden origin-block-checkbox" type="checkbox" name="brazil" id="filter-brazil"
-                  checked>
-                <label class="origin-block-name" for="filter-brazil">Бразилия</label>
-              </li>
-              <li class="origin-block-item">
-                <input class="visually-hidden origin-block-checkbox" type="checkbox" name="ethiopia"
-                  id="filter-ethiopia">
-                <label class="origin-block-name" for="filter-ethiopia">Эфиопия</label>
-              </li>
-              <li class="origin-block-item">
-                <input class="visually-hidden origin-block-checkbox" type="checkbox" name="colombia"
-                  id="filter-colombia">
-                <label class="origin-block-name" for="filter-colombia">Колумбия</label>
-              </li>
-              <li class="origin-block-item">
-                <input class="visually-hidden origin-block-checkbox" type="checkbox" name="costa-rica"
-                  id="filter-costa-rica">
-                <label class="origin-block-name" for="filter-costa-rica">Коста-Рика</label>
-              </li>
-              <li class="origin-block-item">
-                <input class="visually-hidden origin-block-checkbox" type="checkbox" name="peru" id="filter-peru"
-                  disabled>
-                <label class="origin-block-name" for="filter-peru">Перу</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button form-button form-button--submit" type="submit" aria-label="Применить фильтр">Применить
-            фильтр</button>
-          <button class="button form-button form-button--reset" type="reset" aria-label="Сбросить фильтр">Сбросить
-            фильтр</button>
+              <!-- /.range-filter -->
+            </fieldset>
+            <fieldset class="form-block milk-block">
+              <legend class="form-block-title milk-block-title">Наличие молока</legend>
+              <ul class="milk-block-list">
+                <li class="milk-block-item">
+                  <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="any" id="filter-any"
+                    checked>
+                  <label class="milk-block-name" for="filter-any">Неважно</label>
+                </li>
+                <li class="milk-block-item">
+                  <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="animal"
+                    id="filter-animal">
+                  <label class="milk-block-name" for="filter-animal">Только животное</label>
+                </li>
+                <li class="milk-block-item">
+                  <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="vegetable"
+                    id="filter-vegetable">
+                  <label class="milk-block-name" for="filter-vegetable">Только растительное</label>
+                </li>
+                <li class="milk-block-item">
+                  <input class="visually-hidden milk-block-radio" type="radio" name="milk" value="without"
+                    id="filter-without" disabled>
+                  <label class="milk-block-name" for="filter-without">Без молока</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-block origin-block">
+              <legend class="form-block-title origin-block-title">Страна произрастания</legend>
+              <ul class="origin-block-list">
+                <li class="origin-block-item">
+                  <input class="visually-hidden origin-block-checkbox" type="checkbox" name="brazil" id="filter-brazil"
+                    checked>
+                  <label class="origin-block-name" for="filter-brazil">Бразилия</label>
+                </li>
+                <li class="origin-block-item">
+                  <input class="visually-hidden origin-block-checkbox" type="checkbox" name="ethiopia"
+                    id="filter-ethiopia">
+                  <label class="origin-block-name" for="filter-ethiopia">Эфиопия</label>
+                </li>
+                <li class="origin-block-item">
+                  <input class="visually-hidden origin-block-checkbox" type="checkbox" name="colombia"
+                    id="filter-colombia">
+                  <label class="origin-block-name" for="filter-colombia">Колумбия</label>
+                </li>
+                <li class="origin-block-item">
+                  <input class="visually-hidden origin-block-checkbox" type="checkbox" name="costa-rica"
+                    id="filter-costa-rica">
+                  <label class="origin-block-name" for="filter-costa-rica">Коста-Рика</label>
+                </li>
+                <li class="origin-block-item">
+                  <input class="visually-hidden origin-block-checkbox" type="checkbox" name="peru" id="filter-peru"
+                    disabled>
+                  <label class="origin-block-name" for="filter-peru">Перу</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form-wrapper">
+            <button class="button form-button form-button--submit" type="submit" aria-label="Применить фильтр">Применить
+              фильтр</button>
+            <button class="button form-button form-button--reset" type="reset" aria-label="Сбросить фильтр">Сбросить
+              фильтр</button>
+          </div>
         </form>
         <div class="catalog__sorting">
           <span class="catalog__sorting-label">Сортировка:</span>
@@ -462,14 +468,14 @@
                 </svg>
               </button>
             </li>
-            <li class="pagination-item pagination-item--prev">
-              <button class="pagination-item__button pagination-item__button--prev" type="button">
-                Назад
-              </button>
-            </li>
             <li class="pagination-item pagination-item--number">
               <button class="pagination-item__button pagination-item__button-number" type="button">
                 1
+              </button>
+            </li>
+            <li class="pagination-item pagination-item--prev">
+              <button class="pagination-item__button pagination-item__button--prev" type="button">
+                Назад
               </button>
             </li>
             <li class="pagination-item pagination-item--number pagination-item--number--current">

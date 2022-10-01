@@ -2,6 +2,11 @@
   padding-top: 50px;
   padding-bottom: 44px;
   background-color: $grey-lightest;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
 }
 
 .catalog__wrapper {
@@ -25,6 +30,11 @@
   font-size: 24px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .catalog__sorting {
@@ -32,6 +42,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .catalog__sorting-label {

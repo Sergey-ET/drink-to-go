@@ -39,6 +39,12 @@
     &:active {
       background-color: $secondary;
     }
+
+    &--active {
+      &:active {
+        background-color: $white;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -86,6 +92,10 @@
 
     &--active {
       color: $primary;
+
+      &:active {
+        background-color: $white;
+      }
     }
   }
 }

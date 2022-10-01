@@ -1,5 +1,9 @@
 .range-filter {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
 }
 
 .range-filter__controls {
@@ -10,6 +14,10 @@
   height: 2px;
   margin-bottom: 36px;
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .range-filter__bar {
@@ -95,5 +103,9 @@
   &:disabled {
     border: 2px solid $grey-light;
     color: $grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 93px;
   }
 }

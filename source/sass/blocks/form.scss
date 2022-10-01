@@ -1,12 +1,27 @@
+.form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.form-inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .form-block {
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
   border: none;
-
-  &:last-of-type {
-    margin-bottom: 35px;
-  }
 }
 
 .form-block-title {
@@ -14,6 +29,10 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-button {
@@ -47,6 +66,24 @@
       color: $white;
       background-color: $grey-light;
       cursor: default;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--submit {
+      width: 148px;
+      padding: 8px 0;
+      margin-bottom: 44px;
+      margin-left: auto;
+      margin-right: 33px;
+    }
+
+    &--reset {
+      width: 138px;
+      margin: 0;
+      margin-right: auto;
+      margin-bottom: 44px;
+      padding: 8px 0;
     }
   }
 }
