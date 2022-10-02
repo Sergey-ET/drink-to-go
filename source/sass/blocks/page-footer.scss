@@ -1,6 +1,11 @@
 .page-footer {
   padding-top: 22px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
 }
 
 .page-footer__wrapper {
@@ -23,12 +28,31 @@
     right: -20px;
     border: 1px solid $secondary;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 32px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-footer__logo-icon {
 
   &--desktop {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
 
@@ -71,6 +95,15 @@
   fill: $primary;
 }
 
+.page-footer__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .page-footer__menu {
   position: relative;
   padding-top: 20px;
@@ -87,6 +120,19 @@
     left: -20px;
     right: -20px;
     border: 1px solid $secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    padding: 0;
+
+    &:nth-child(2) {
+      width: 222px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -124,6 +170,15 @@
 
 .page-footer__menu-link {
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $primary-light;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
 }
 
 .page-footer__menu-contacts .page-footer__menu-item {
@@ -160,6 +215,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .page-footer__copyright-text {
