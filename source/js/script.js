@@ -109,6 +109,31 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
+// Map
+
+const MAP_CENTER = {
+  lat: 59.96834,
+  lng: 30.3175,
+};
+
+const mainPinIcon = L.icon({
+  iconUrl: '../img/map-pin.svg',
+  iconSize: [38, 50],
+  iconAnchor: [19, 50],
+});
+
+const map = L.map('map-canvas').setView(MAP_CENTER, 18);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+const mainPinMarker = L.marker(MAP_CENTER, {
+  icon: mainPinIcon,
+});
+
+mainPinMarker.addTo(map);
+
 // Modal window
 const link = document.querySelector('.js-login');
 const popup = document.querySelector('.modal');
