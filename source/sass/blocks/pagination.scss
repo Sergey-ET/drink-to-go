@@ -17,6 +17,11 @@
     margin-left: auto;
     right: -20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
 }
 
 .pagination-item {
