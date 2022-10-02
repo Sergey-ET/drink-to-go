@@ -1,0 +1,199 @@
+.page-footer {
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.page-footer__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page-footer__links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    border: 1px solid $secondary;
+  }
+}
+
+.page-footer__logo-icon {
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-footer__logo-text {
+  display: none;
+}
+
+.page-footer__list {
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+  }
+
+  &:active {
+    background-color: $primary-opacity-025;
+  }
+}
+
+.page-footer__icon {
+  fill: $grey;
+}
+
+.page-footer__link:hover .page-footer__icon,
+.page-footer__link:focus .page-footer__icon {
+  fill: $primary;
+}
+
+.page-footer__menu {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 28px;
+
+  &:last-child {
+    padding-bottom: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    border: 1px solid $secondary;
+  }
+}
+
+.page-footer__menu-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: $primary;
+}
+
+.page-footer__menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-footer__menu-item {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__menu-contacts .page-footer__menu-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.page-footer__menu-link {
+  color: $black;
+}
+
+.page-footer__menu-contacts .page-footer__menu-item {
+  position: relative;
+  padding-left: 20px;
+
+  &--address::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background-image: url(../img/address.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--phone::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background-image: url(../img/phone.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__copyright {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer__copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey;
+}
+
+.page-footer__copyright-link {
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
+}
+
+.page-footer__copyright-icon {
+  position: relative;
+  top: 5px;
+  fill: $grey;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-icon,
+.page-footer__copyright-link:focus .page-footer__copyright-icon {
+  fill: $primary;
+}
+
+.page-footer__copyright-link:active .page-footer__copyright-icon {
+  fill: $primary-dark;
+}

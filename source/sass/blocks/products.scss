@@ -30,6 +30,11 @@
 
   @media (min-width: $desktop-width) {
     width: 317px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 5px 15px $black-opacity-015;
+    }
   }
 }
 
