@@ -1,7 +1,7 @@
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  right: 7px;
+  right: 0;
   width: 167px;
   font-weight: 400;
   font-size: 16px;
@@ -55,7 +55,7 @@
 }
 
 .select-selected {
-  width: 150px;
+  width: 155px;
   padding-right: 0;
   padding-left: 0;
 }
