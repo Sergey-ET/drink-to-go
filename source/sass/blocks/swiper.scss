@@ -217,6 +217,7 @@
   left: -20px;
   width: 80px;
   height: 714px;
+  fill: $primary;
 
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
@@ -247,6 +248,7 @@
   right: -20px;
   width: 80px;
   height: 714px;
+  fill: $primary;
   transform: rotate(180deg);
 
   &:active {
