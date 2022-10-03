@@ -1,10 +1,11 @@
 /* The container must be positioned relative: */
 .custom-select {
-  width: 160px;
   position: relative;
+  right: 7px;
+  width: 167px;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   color: $primary;
 }
 
@@ -18,7 +19,7 @@
   color: $primary;
   font-weight: 600;
   text-align: end;
-  width: 186px;
+  width: 190px;
 }
 
 /* Style the arrow inside the select element: */

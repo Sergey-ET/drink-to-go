@@ -1,5 +1,5 @@
 .price-block {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
 
   @media (min-width: $tablet-width) {
@@ -11,4 +11,8 @@
     margin-right: 0;
     margin-bottom: 30px;
   }
+}
+
+.price-block-title {
+  margin-bottom: 32px;
 }

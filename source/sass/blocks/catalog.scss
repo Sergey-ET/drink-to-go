@@ -44,7 +44,7 @@
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -65,8 +65,8 @@
 .catalog__sorting {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  width: 280px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -76,8 +76,9 @@
 
 .catalog__sorting-label {
   font-weight: 600;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 3px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / -1;

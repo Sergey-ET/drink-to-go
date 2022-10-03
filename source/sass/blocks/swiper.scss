@@ -102,7 +102,7 @@
 .swiper-slide__image {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -214,9 +214,9 @@
 
 .swiper-button-prev {
   position: absolute;
-  top: 22px;
+  top: -7px;
   bottom: 0;
-  left: -20px;
+  left: -30px;
   width: 80px;
   height: 714px;
   fill: $primary;
@@ -245,9 +245,9 @@
 
 .swiper-button-next {
   position: absolute;
-  top: 22px;
+  top: -7px;
   bottom: 0;
-  right: -20px;
+  right: -30px;
   width: 80px;
   height: 714px;
   fill: $primary;

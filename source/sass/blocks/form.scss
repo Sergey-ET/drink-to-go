@@ -25,6 +25,8 @@
 }
 
 .form-wrapper {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -40,7 +42,7 @@
 }
 
 .form-block-title {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -54,16 +56,19 @@
   display: block;
   width: 160px;
   margin: 0 auto;
-  padding: 11px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
   font-size: 14px;
   line-height: 24px;
 
   &--submit {
     margin-bottom: 25px;
+    font-size: 13px;
   }
 
   &--reset {
-    margin-bottom: 40px;
     background-color: $white;
     color: $primary;
 

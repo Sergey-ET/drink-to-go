@@ -112,8 +112,13 @@ document.addEventListener("click", closeAllSelect);
 // Map
 
 const MAP_CENTER = {
-  lat: 59.96834,
-  lng: 30.3175,
+  lat: 59.96843,
+  lng: 30.317548,
+};
+
+const OFFICE_PLACE = {
+  lat: 59.968365,
+  lng: 30.317633,
 };
 
 const mainPinIcon = L.icon({
@@ -128,7 +133,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-const mainPinMarker = L.marker(MAP_CENTER, {
+const mainPinMarker = L.marker(OFFICE_PLACE, {
   icon: mainPinIcon,
 });
 
