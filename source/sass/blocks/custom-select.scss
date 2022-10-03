@@ -2,7 +2,7 @@
 .custom-select {
   position: relative;
   right: 0;
-  width: 167px;
+  width: 159px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -23,25 +23,27 @@
   color: $primary;
   font-weight: 600;
   text-align: end;
-  width: 190px;
+  width: 160px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* Style the arrow inside the select element: */
-.select-selected:after {
+.select-selected::after {
   position: absolute;
   content: "";
   top: 17px;
   right: -5px;
   width: 10px;
   height: 6px;
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
   background-size: auto;
   background-repeat: no-repeat;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  background-image: url(../img/tick.svg);
+.select-selected.select-arrow-active::after {
+  background-image: url("../img/tick.svg");
   background-size: auto;
   background-repeat: no-repeat;
   transform: rotate(180deg);
@@ -54,12 +56,6 @@
   cursor: pointer;
 }
 
-.select-selected {
-  width: 155px;
-  padding-right: 0;
-  padding-left: 0;
-}
-
 .select-items div:not(:last-child) {
   border: 1px solid transparent;
   border-color: transparent transparent $secondary transparent;
@@ -70,12 +66,12 @@
   position: absolute;
   background-color: $white;
   top: 100%;
-  left: -8px;
+  left: -16px;
   right: -8px;
   z-index: 99;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 10px 10px $black;
+  box-shadow: 0 10px 10px $black;
   color: $black;
   overflow: hidden;
 }
