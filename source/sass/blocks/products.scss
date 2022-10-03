@@ -12,6 +12,10 @@
     gap: 30px 30px;
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .products-item {

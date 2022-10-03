@@ -24,6 +24,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+  }
 }
 
 .origin-block-name {

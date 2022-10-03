@@ -73,6 +73,14 @@
     margin-left: auto;
     margin-bottom: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    position: relative;
+    top: -7px;
+    min-width: 288px;
+    margin-bottom: 14px;
+  }
 }
 
 .catalog__sorting-label {
