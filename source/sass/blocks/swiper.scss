@@ -29,6 +29,7 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 60px;
+  overflow-y: visible;
 
   &--white {
     background-color: $flat-white;
@@ -91,6 +92,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 600px;
     margin-left: 30px;
     align-items: flex-start;
     order: 0;

@@ -21,6 +21,7 @@
     max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
     gap: 20px 30px;
   }
 }
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 22px;
+  column-gap: 20px;
 
   &::after {
     position: absolute;
@@ -94,10 +96,12 @@
 .page-footer__list {
   padding: 0;
   margin: 0;
-  width: 160px;
+  min-width: 160px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .page-footer__link {
@@ -131,7 +135,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 30px;
+    gap: 30px;
     margin-bottom: 30px;
   }
 
@@ -276,6 +280,7 @@
 .page-footer__copyright-text {
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
   color: $grey;
 }
 

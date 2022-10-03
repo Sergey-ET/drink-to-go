@@ -26,6 +26,7 @@
 .page-header__inner {
   position: relative;
   display: inline-flex;
+  flex-wrap: wrap;
   top: -10px;
   right: calc(244px - 100%);
 

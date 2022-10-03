@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +17,8 @@
     margin: 0;
     margin-left: auto;
     right: -20px;
+    gap: 20px 0;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
