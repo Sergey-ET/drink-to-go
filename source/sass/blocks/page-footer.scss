@@ -45,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     &::after {
       display: none;
@@ -103,6 +103,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
 }
 
 .page-footer__link {
@@ -137,7 +141,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
