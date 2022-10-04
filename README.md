@@ -13,3 +13,5 @@ Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdev
 * Local server starting: `npm start`
 
 ## Project review
+
+https://sergey-et.github.io/drink-to-go/
