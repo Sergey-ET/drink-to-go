@@ -62,7 +62,6 @@
 }
 
 .page-footer__logo-link {
-
   @media (min-width: $desktop-width) {
     margin-top: -8px;
     margin-bottom: 10px;
@@ -70,7 +69,6 @@
 }
 
 .page-footer__logo-icon {
-
   &--desktop {
     display: none;
   }
@@ -255,7 +253,7 @@
     left: 0;
     width: 13px;
     height: 16px;
-    background-image: url(../img/address.svg);
+    background-image: url("../img/address.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
@@ -267,7 +265,7 @@
     left: 0;
     width: 13px;
     height: 16px;
-    background-image: url(../img/phone.svg);
+    background-image: url("../img/phone.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }

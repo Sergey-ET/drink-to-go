@@ -39,40 +39,40 @@
   user-select: none;
 }
 
-.origin-block-checkbox+.origin-block-name::before {
+.origin-block-checkbox + .origin-block-name::before {
   content: "";
   position: absolute;
   top: 0;
   left: -52px;
   width: 42px;
   height: 24px;
-  background-image: url(../img/checkbox_unchecked.svg);
+  background-image: url("../img/checkbox_unchecked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.origin-block-checkbox:checked+.origin-block-name::before {
-  background-image: url(../img/checkbox_checked.svg);
+.origin-block-checkbox:checked + .origin-block-name::before {
+  background-image: url("../img/checkbox_checked.svg");
 }
 
-.origin-block-checkbox:focus+.origin-block-name::before,
-.origin-block-checkbox:hover+.origin-block-name::before {
-  background-image: url(../img/checkbox_hover.svg);
+.origin-block-checkbox:focus + .origin-block-name::before,
+.origin-block-checkbox:hover + .origin-block-name::before {
+  background-image: url("../img/checkbox_hover.svg");
 }
 
-.origin-block-checkbox:checked:focus+.origin-block-name::before,
-.origin-block-checkbox:checked:hover+.origin-block-name::before {
-  background-image: url(../img/checkbox_checked.svg);
+.origin-block-checkbox:checked:focus + .origin-block-name::before,
+.origin-block-checkbox:checked:hover + .origin-block-name::before {
+  background-image: url("../img/checkbox_checked.svg");
 }
 
-.origin-block-checkbox:disabled+.origin-block-name::before {
-  background-image: url(../img/checkbox_disabled_unchecked.svg);
+.origin-block-checkbox:disabled + .origin-block-name::before {
+  background-image: url("../img/checkbox_disabled_unchecked.svg");
 }
 
-.origin-block-checkbox:disabled:checked+.origin-block-name::before {
-  background-image: url(../img/checkbox_disabled_checked.svg);
+.origin-block-checkbox:disabled:checked + .origin-block-name::before {
+  background-image: url("../img/checkbox_disabled_checked.svg");
 }
 
-.origin-block-checkbox:disabled+.origin-block-name {
+.origin-block-checkbox:disabled + .origin-block-name {
   color: $grey;
 }
