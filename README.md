@@ -1,4 +1,4 @@
-# "Drink2Go" - Online store of coffee drinks
+# <img align="left" width="60" height="60" alt="Logo" src="./source/img/icons/logo-symbol.svg"> "Drink2Go" - Online store of coffee drinks
 
 Diploma project at asynchronous course "Profession "Frontend Developer" by [HTML Academy](https://htmlacademy.ru).
 
