@@ -18,3 +18,24 @@
     background-image: url("../img/map-desktop.png");
   }
 }
+
+@media (min-resolution: 2dppx) {
+  .map {
+    background-image: url("../img/map-mobile@2x.png");
+    background-size: auto 420px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .map {
+      background-image: url("../img/map-tablet@2x.png");
+      background-size: auto 480px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .map {
+      background-image: url("../img/map-desktop@2x.png");
+      background-size: auto 540px;
+    }
+  }
+}
