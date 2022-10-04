@@ -232,7 +232,7 @@
   fill: $primary;
 
   &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
   }
 
   @media (min-width: $tablet-width) {
@@ -245,11 +245,11 @@
 
     &:hover,
     &:focus {
-      background: linear-gradient(90deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, $white 0%, $white-opacity-0 100%);
     }
 
     &:active {
-      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+      background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
     }
   }
 }
@@ -265,7 +265,7 @@
   transform: rotate(180deg);
 
   &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
   }
 
   @media (min-width: $tablet-width) {
@@ -278,11 +278,11 @@
 
     &:hover,
     &:focus {
-      background: linear-gradient(90deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, $white 0%, $white-opacity-0 100%);
     }
 
     &:active {
-      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+      background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
     }
   }
 }
