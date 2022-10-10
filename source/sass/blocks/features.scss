@@ -59,6 +59,10 @@
     justify-content: center;
     gap: 50px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }
 
 .features__item {
