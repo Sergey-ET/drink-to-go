@@ -55,18 +55,6 @@
     outline: $white solid 2px;
     outline-offset: -4px;
   }
-
-  @media (min-width: $tablet-width) {
-    &--max {
-      left: 81% !important; // Перебиваю инлайновый стиль для соответствия макету
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--max {
-      left: 86% !important; // Перебиваю инлайновый стиль для соответствия макету
-    }
-  }
 }
 
 .range-filter--disabled .range-filter__toggle {
