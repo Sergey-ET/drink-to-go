@@ -1,4 +1,4 @@
-# <img align="left" width="55" height="55" alt="Logo" src="./source/img/icons/logo-symbol.svg"> "Drink2Go" - Online store of coffee drinks
+# <img align="left" width="55" height="55" alt="Logo" src="./img/icons/logo-symbol.svg"> "Drink2Go" - Online store of coffee drinks
 
 <img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png">
 
@@ -13,3 +13,5 @@ Project completed by [Sergey Troshkin](https://htmlacademy.ru/profile/therealdev
 * Local server starting: `npm start`
 
 ## Project review
+
+https://sergey-et.github.io/drink-to-go/
