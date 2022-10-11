@@ -222,11 +222,10 @@
   }
 }
 
-.swiper-button-prev {
+.swiper-button {
   position: absolute;
   top: -7px;
   bottom: 0;
-  left: -30px;
   width: 80px;
   height: 714px;
   fill: $primary;
@@ -237,7 +236,6 @@
 
   @media (min-width: $tablet-width) {
     top: -52px;
-    left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -254,35 +252,19 @@
   }
 }
 
-.swiper-button-next {
-  position: absolute;
-  top: -7px;
-  bottom: 0;
-  right: -30px;
-  width: 80px;
-  height: 714px;
-  fill: $primary;
-  transform: rotate(180deg);
-
-  &:active {
-    background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
-  }
+.swiper-button-prev {
+  left: -30px;
 
   @media (min-width: $tablet-width) {
-    top: -52px;
-    right: 0;
+    left: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    top: 22px;
+.swiper-button-next {
+  right: -30px;
+  transform: rotate(180deg);
 
-    &:hover,
-    &:focus {
-      background: linear-gradient(90deg, $white 0%, $white-opacity-0 100%);
-    }
-
-    &:active {
-      background: linear-gradient(90deg, $primary-opacity-025 0%, $primary-opacity-0 100%);
-    }
+  @media (min-width: $tablet-width) {
+    right: 0;
   }
 }
