@@ -1,18 +1,5 @@
 .swiper {
   width: 100vw;
-
-  @media (max-width: $mobile-width-only) {
-    margin: 0 auto;
-    height: 656px;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 828px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 714px;
-  }
 }
 
 .swiper-wrapper {
@@ -25,11 +12,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 656px;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 60px;
-  overflow-y: visible;
 
   &--white {
     background-color: $flat-white;
@@ -44,6 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 828px;
     padding-top: 59px;
     padding-bottom: 0;
 
@@ -61,8 +49,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    min-height: 714px;
+    padding-top: 23px;
+    padding-bottom: 85px;
     padding-left: 40px;
     padding-right: 40px;
     flex-direction: row;
